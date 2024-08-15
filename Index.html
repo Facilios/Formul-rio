@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+
+            <label for="age">Idade:</label>
+            <input type="number" id="age" name="age" placeholder="Digite sua idade" required>
+
+            <p>Qual seu gênero?</p>
+            <label>
+                <input type="radio" name="gender" value="male"> Masculino
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female"> Feminino
+            </label>
+            <label>
+                <input type="radio" name="gender" value="other"> Outro
+            </label>
+
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required> Aceito os termos e condições
+            </label>
+
+            <label for="country">País:</label>
+            <select id="country" name="country" required>
+                <option value="brazil">Brasil</option>
+                <option value="argentina">Argentina</option>
+                <option value="usa" disabled>Estados Unidos</option>
+                <option value="france">França</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
